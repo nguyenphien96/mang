@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập vào một số nguyên dương: ");
+        let n = 3;
+        let fn;
+        let fn1 = 1;
+        let fn2 = 1;
+        if (a == 1) {
+        document.write(fn1);
+        }
+        else if (a == 2)
+        document.write(fn1 + ", " + fn2);
+        else
+        document.write(fn1 + ", " + fn2);
+        while (n <= a) {
+        fn = fn1 + fn2;
+        document.write(", " + fn);
+        fn1 = fn2;
+        fn2 = fn;
+        n++;
+        }
+        </script>
+        
+</body>
+</html>
